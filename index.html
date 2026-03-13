@@ -110,9 +110,9 @@ section{min-height:100vh;display:flex;flex-direction:column;align-items:center;j
 @keyframes mqmv{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* STATS / LIVE COUNTER */
-#stats{background:var(--ink);min-height:auto;padding:100px 64px;border-top:.5px solid var(--border);}
+#stats{background:var(--ink);min-height:auto;padding:100px 120px;border-top:.5px solid var(--border);}
 .stats-eyebrow{font-family:var(--sans);font-size:7.5px;letter-spacing:.5em;text-transform:uppercase;color:rgba(245,242,235,.2);display:block;margin-bottom:60px;text-align:center;}
-.stats-live-row{display:flex;align-items:baseline;gap:0;margin-bottom:80px;border-bottom:.5px solid var(--border);padding-bottom:52px;}
+.stats-live-row{display:flex;align-items:baseline;gap:0;margin-bottom:80px;border-bottom:.5px solid var(--border);padding-bottom:52px;justify-content:center;}
 .stats-live-label{font-family:var(--sans);font-size:7.5px;letter-spacing:.35em;text-transform:uppercase;color:rgba(245,242,235,.18);writing-mode:vertical-rl;transform:rotate(180deg);margin-right:36px;white-space:nowrap;}
 .stats-live-number{font-family:var(--serif);font-size:clamp(52px,8vw,110px);font-weight:300;color:var(--warm);line-height:1;letter-spacing:-.03em;flex:1;}
 .stats-live-plus{font-family:var(--serif);font-size:clamp(32px,4vw,58px);font-weight:300;color:rgba(245,242,235,.25);line-height:1;}
@@ -576,7 +576,7 @@ document.querySelectorAll('.rv,.lm').forEach(el=>obs.observe(el));
   let count = 524637351;
   
   function fmt(n){
-    return n.toLocaleString('en-IN');
+    return n.toLocaleString('en-US');
   }
   
   el.textContent = fmt(count);
