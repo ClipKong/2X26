@@ -66,7 +66,7 @@ section{min-height:100vh;display:flex;flex-direction:column;align-items:center;j
 .hero-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 30%,rgba(14,13,11,.75) 100%);pointer-events:none;}
 .hero-logo{width:min(480px,76vw);filter:brightness(10);opacity:0;animation:up 1s 1.6s cubic-bezier(.16,1,.3,1) forwards;position:relative;z-index:1;}
 .hero-rule{width:1px;height:0;background:rgba(245,242,235,0.15);margin:44px auto;animation:grow 1.2s 2.2s ease forwards;position:relative;z-index:1;}
-.hero-headline{font-family:var(--serif);font-size:clamp(22px,2.8vw,38px);font-weight:300;line-height:1.2;letter-spacing:-.01em;color:var(--warm);max-width:700px;opacity:0;animation:up .9s 2.1s cubic-bezier(.16,1,.3,1) forwards;position:relative;z-index:1;margin-bottom:20px;}
+.hero-headline{font-fami 12345ly:var(--serif);font-size:clamp(32px,4.5vw,62px);font-weight:300;line-height:1.2;letter-spacing:-.01em;color:var(--warm);max-width:700px;opacity:0;animation:up .9s 2.1s cubic-bezier(.16,1,.3,1) forwards;position:relative;z-index:1;margin-bottom:20px;}
 .hero-headline em{font-style:italic;color:rgba(245,242,235,.55);}
 .hero-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,242,235,.28);max-width:360px;line-height:2;opacity:0;animation:up .8s 2.4s ease forwards;position:relative;z-index:1;}
 .hero-cta{display:inline-block;font-family:var(--sans);font-size:8.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);background:var(--warm);text-decoration:none;padding:17px 48px;margin-top:44px;opacity:0;animation:up .8s 2.6s ease forwards;position:relative;z-index:1;transition:opacity .3s;}
@@ -160,11 +160,11 @@ section{min-height:100vh;display:flex;flex-direction:column;align-items:center;j
 .cs-year{font-family:var(--sans);font-size:7.5px;letter-spacing:.35em;text-transform:uppercase;color:rgba(245,242,235,.15);}
 .cs-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:52px;}
 .cs-title-block{max-width:600px;text-align:left;}
-.cs-title{font-family:var(--serif);font-size:clamp(28px,4vw,52px);font-weight:300;color:var(--warm);line-height:1.1;letter-spacing:-.01em;margin-bottom:16px;}
+.cs-title{font-family:var(--serif);font-size:clamp(22px,3vw,42px);font-weight:300;color:var(--warm);line-height:1.1;letter-spacing:-.01em;margin-bottom:16px;}
 .cs-title em{font-style:italic;color:rgba(245,242,235,.55);}
 .cs-subtitle{font-family:var(--sans);font-size:10.5px;font-weight:300;line-height:1.95;color:rgba(245,242,235,.38);max-width:480px;}
 .cs-badge{text-align:right;flex-shrink:0;padding-left:40px;}
-.cs-badge-n{font-family:var(--serif);font-size:80px;font-weight:300;color:rgba(245,242,235,.06);line-height:.9;display:block;}
+.cs-badge-n{font-family:var(--serif);font-size:80px;font-weight:300;color:rgba(245,242,235,.35);line-height:.9;display:block;}
 .cs-badge-l{font-family:var(--sans);font-size:7px;letter-spacing:.35em;text-transform:uppercase;color:rgba(245,242,235,.15);display:block;}
 .cs-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:.5px solid var(--border);margin-bottom:1px;}
 .cs-m{padding:36px 32px;border-right:.5px solid var(--border);}
@@ -362,7 +362,7 @@ footer{background:#0a0908;padding:52px 64px;border-top:.5px solid var(--border);
       <div class="stat-l">Years in Trenches</div>
     </div>
     <div class="stat-item">
-      <div class="stat-n" style="font-size:clamp(16px,1.8vw,22px);">Nimesh<br><span style="font-size:.25em;font-family:var(--sans);letter-spacing:.1em;color:rgba(245,242,235,.2);">Bajpai</span></div>
+      <div class="stat-n">Nimesh Bajpai</div>
       <div class="stat-l">Founder / Director</div>
     </div>
   </div>
@@ -437,7 +437,7 @@ footer{background:#0a0908;padding:52px 64px;border-top:.5px solid var(--border);
     </div>
     <div class="cs-header rv d1">
       <div class="cs-title-block">
-        <h2 class="cs-title">How ClipKong Generated <em>239,000+ Views</em><br>&amp; 3,500+ Leads</h2>
+        <h2 class="cs-title">How ClipKong Generated <em>239,000+ Views</em>&amp; 3,500+ Leads</h2>
         <p class="cs-subtitle">Starting from 132 followers, zero filming, zero paid ads — with just 2 reels on a brand new Instagram page.</p>
       </div>
       <div class="cs-badge">
@@ -525,6 +525,7 @@ footer{background:#0a0908;padding:52px 64px;border-top:.5px solid var(--border);
 <!-- CLOSE -->
 <section id="close">
   <div class="close-halo"></div>
+  <h2 class="rv" style="font-family:var(--serif);font-size:clamp(36px,5vw,72px);font-weight:300;color:var(--warm);margin-bottom:28px;line-height:1.1;">Own your category.<br><em style="color:rgba(245,242,235,.4);">Starting now.</em></h2>
   <p class="close-h rv d1">One strategy call. We'll show you exactly where you're invisible, where you should be dominant, and how we get you there — without a single hour of your time.</p>
   <div class="close-ctas rv d2">
     <a href="https://cal.com/nimesh-bajpai/lets-talk" class="btn-p" target="_blank" rel="noopener">Book a Strategy Call</a>
